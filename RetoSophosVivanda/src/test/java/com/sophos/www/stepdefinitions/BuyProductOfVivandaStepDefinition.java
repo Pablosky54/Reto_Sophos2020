@@ -3,6 +3,9 @@ package com.sophos.www.stepdefinitions;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
+import com.sophos.www.task.OpenTheBrowser;
+import com.sophos.www.userinterfaces.HomeVivanda;
+
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -21,7 +24,7 @@ public class BuyProductOfVivandaStepDefinition {
 	
 	@Given("^User open website$")
 	public void userOpenWebsite()  {
-		theActorInTheSpotlight().wasAbleTo();
+		theActorInTheSpotlight().wasAbleTo(OpenTheBrowser.on(HomeVivanda.newInstance()));
 	}
 
 
