@@ -30,6 +30,7 @@ public class HomeVivanda extends PageObject{
 	public static final Target CONFIRM_BOTTON = Target.the("Confirm add adress botton")
             .located(By.xpath("*//div//div[@class='SalesChannel__buttonWrapper']//button[@class='SalesChannel__confirmButton SalesChannel__confirmButton--ubigeo SalesChannel_confirmButton--active']"));
 	
-	
+	public static final Target CLOSE_BOTTON = Target.the("Close botton of windows")
+            .located(By.xpath("//div[@class='SalesChannel__close']"));
 
 }

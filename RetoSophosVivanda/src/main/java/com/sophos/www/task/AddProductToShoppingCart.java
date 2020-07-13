@@ -7,6 +7,7 @@ import static com.sophos.www.userinterfaces.HomeVivanda.SELECT_PACKAGE;
 import static com.sophos.www.userinterfaces.HomeVivanda.SELECT_RANDON_ADRESS;
 import static com.sophos.www.userinterfaces.HomeVivanda.ACCEPT_BOTTON;
 import static com.sophos.www.userinterfaces.HomeVivanda.CONFIRM_BOTTON;
+import static com.sophos.www.userinterfaces.HomeVivanda.CLOSE_BOTTON;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 import org.openqa.selenium.ElementNotVisibleException;
@@ -38,7 +39,8 @@ public class AddProductToShoppingCart implements Task {
             		  		,Click.on(SELECT_PACKAGE)
             		  		,Click.on(SELECT_RANDON_ADRESS)
             		  		,Click.on(ACCEPT_BOTTON)
-            		  		,Click.on(CONFIRM_BOTTON)); 
+            		  		,Click.on(CONFIRM_BOTTON)
+            		  		,Click.on(CLOSE_BOTTON)); 
             
            
             	
