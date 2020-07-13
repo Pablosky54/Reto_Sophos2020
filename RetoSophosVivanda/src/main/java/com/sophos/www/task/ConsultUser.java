@@ -30,8 +30,7 @@ public class ConsultUser implements Task{
    
 	@Override
 	public <T extends Actor> void performAs(T actor) {
-		userConsult = Consult.newInstance().generateConsult(user, name,lastName);
-		System.out.println("metodo GET ->"+Rest.BASE.toString()+userConsult+AUTHORIZATION.toString());
+		userConsult = Consult.newInstance().generateConsult(user, name,lastName);		
 		actor.attemptsTo(Get.resource(userConsult+AUTHORIZATION.toString())
 		        );
 		
